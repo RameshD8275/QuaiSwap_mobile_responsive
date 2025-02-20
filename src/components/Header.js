@@ -40,22 +40,21 @@ function Header(props) {
                     <div className="headerItem">QUAI Airdrop</div>
                 </Link>*/}
             </div>
-            <div className="flex gap-3">
-                <div className="flex w-[30px] h-[25px]">
+            <div className="flex gap-4 min-w-[110px]">
+                <div className="flex min-w-[25px] h-[25px]">
                     <a href="https://t.me/quaiswapexchange" target="_blank" rel="noopener noreferrer">
                         <img src={telegram} alt="Telegram" className="w-[25px] h-[25px]" />
                     </a>
                 </div>
-                <div className="w-[70px] h-[25px] flex cursor-pointer px-2">
-                    <img src={Quai} alt="quai" className="w-[30px] h-[25px]"/>
-                    <p className="px-2 hover:text-[#E22901]">Quai</p>
+                <div className="h-[25px] flex cursor-pointer">
+                    <img src={Quai} alt="quai" className="w-[25px] h-[25px]"/>
+                    <p className="ps-2 hover:text-[#E22901]">Quai</p>
                 </div>
                 
             </div>
             {/* Wallet Connect Button */}
-            <div className="flex items-center px-6">
-                <div className="flex justify-center items-center">
-
+            <div className="flex items-center px-6 header__menu-col">
+                <div className="flex justify-center items-center connectButtonWrap">
                     <div className="connectButton" onClick={connect}>
                         {
                             isConnected && address != undefined ? address.slice(0, 6) + "..." + address.slice(38) : "Connect"
@@ -91,6 +90,11 @@ function Header(props) {
                     <Link to="/airdrop" className="link" onClick={() => setIsMobileMenuOpen(false)}>
                         <div className="headerItem">QUAI Airdrop</div>
                     </Link>
+                    <div className="connectButton" onClick={connect}>
+                        {
+                            isConnected && address != undefined ? address.slice(0, 6) + "..." + address.slice(38) : "Connect"
+                        }
+                    </div>
                 </div>
             )}
         </header>

@@ -680,7 +680,7 @@ function Swap(props) {
                 </div>
             </Modal>
             {contextHolder}
-            <div className="w-[80%] md:h-[80vh] justify-center flex flex-col md:flex-row gap-5">
+            <div className="w-[100%] lg:w-[80%] lg:h-[80vh] justify-center flex flex-col lg:flex-row gap-8 lg:gap-5 px-[15px] md:px-[30px] lg:px-0 pb-8 lg:pb-0">
                 {showChart && (
                     <div
                         className="h-[60vh] !border !border-gray-500 rounded-md min-h-[480px]"
