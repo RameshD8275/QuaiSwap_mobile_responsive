@@ -47,10 +47,10 @@ function Header(props) {
                     </a>
                 </div>
                 <div className="h-[25px] flex cursor-pointer">
-                    <img src={Quai} alt="quai" className="w-[25px] h-[25px]"/>
+                    <img src={Quai} alt="quai" className="w-[25px] h-[25px]" />
                     <p className="ps-2 hover:text-[#E22901]">Quai</p>
                 </div>
-                
+
             </div>
             {/* Wallet Connect Button */}
             <div className="flex items-center px-6 header__menu-col">

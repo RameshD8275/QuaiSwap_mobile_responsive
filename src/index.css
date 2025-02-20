@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
     --purple-color: rgb(122, 110, 170);
     --button-bg: #E22901;
@@ -26,8 +27,6 @@ body {
     font-family: "Bai Jamjuree";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* height: 100vh;
-    width: 100vw; */
     background: #000111;
     color: white;
 }
@@ -89,11 +88,13 @@ code {
     border-color: #E22901;
     margin-left: 10px;
 }
-.totalLpAmount{
+
+.totalLpAmount {
     width: auto;
     font-size: 26px;
-    color:#E22901;
+    color: #E22901;
 }
+
 .below-part-pool {
     display: inline-flex;
     justify-content: space-between;
@@ -103,6 +104,7 @@ code {
     justify-items: center;
     align-items: center;
 }
+
 .removeLp {
     right: 5%;
     width: 100px;
@@ -282,7 +284,7 @@ body {
     margin: 30px auto;
     background: #0e111b;
     padding: 20px;
-    color:black;
+    color: black;
 }
 
 .header {
@@ -327,7 +329,7 @@ body {
 .price-box {
     background-color: #f8f7f8;
     border-radius: 10px;
-    border: none;   
+    border: none;
     margin-right: 15px;
     font-weight: bold;
     padding: 8px 15px;
@@ -336,13 +338,12 @@ body {
     text-align: center;
     box-sizing: border-box;
     margin-top: 10px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .price-box.active,
 .price-box:hover,
-.price-box:focus
-{
+.price-box:focus {
     background-color: #E22901;
 }
 
@@ -353,7 +354,7 @@ body {
 .time-title {
     font-size: 16px;
     font-weight: bold;
-    color:white;
+    color: white;
     margin-top: 10px;
 }
 
@@ -394,9 +395,11 @@ body {
     cursor: pointer;
     background-color: #E22901;
 }
+
 .time-button-active:last-child {
     margin-right: 0px;
 }
+
 .current {
     margin-top: 10px;
     font-size: 20px;
@@ -412,15 +415,18 @@ body {
     font-weight: bold;
     font-size: 16px;
     margin: 14px 0px;
-    color:white;
+    color: white;
     cursor: pointer;
 }
-.Hide:hover{
-    color:#E22901;
+
+.Hide:hover {
+    color: #E22901;
 }
-.hide{
+
+.hide {
     display: none;
 }
+
 .Hide .fa-angle-up {
     font-size: 18px;
     margin-left: 6px;
@@ -431,14 +437,14 @@ body {
     justify-content: space-between;
     font-weight: bold;
     font-size: 16px;
-    color:white;
+    color: white;
 }
 
 .stake-balance-title {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-    color:white;
+    color: white;
 }
 
 .stake-balance-box {
@@ -509,7 +515,7 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 18px;
-    color:white;
+    color: white;
     padding-top: 30px;
     align-items: center;
 }
@@ -544,17 +550,20 @@ body {
     padding: 0px 50px;
     background-color: var(--button-bg);
     color: white;
-  }
-  .enableBtn svg,
-  .disableBtn svg {
+}
+
+.enableBtn svg,
+.disableBtn svg {
     align-self: center !important;
-  }
-  .enableBtn:hover {
+}
+
+.enableBtn:hover {
     background-color: transparent;
     color: var(--button-bg);
     border-color: var(--button-bg);
-  }
-  .disableBtn {
+}
+
+.disableBtn {
     align-items: center;
     justify-content: center;
     display: inline-flex;
@@ -572,13 +581,9 @@ body {
     transition: all 0.2s ease;
     height: 48px;
     padding: 0px 50px;
-    background-color:  rgb(233, 234, 235);
+    background-color: rgb(233, 234, 235);
     color: rgb(189, 194, 196);
-  }
-  /* .disableBtn:hover {
-    background-color: var(--button-bg);
-    color: white;
-  } */
+}
 
 .apy .number {
     color: #f0c443;
@@ -599,7 +604,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 15px 0px 15px;
-    color:white;
+    color: white;
 }
 
 /* toggle css */
@@ -628,13 +633,14 @@ body {
     transition: .4s;
 }
 
-.input-ROI{
+.input-ROI {
     border: none;
     text-align: right;
     font-size: x-large;
     font-weight: bold;
 }
-*:focus{
+
+*:focus {
     outline: none;
 }
 
@@ -688,6 +694,7 @@ input:checked+.slider:before {
     margin-right: 10px;
     margin-top: 5px;
 }
+
 .btn-section .slider::before {
     position: absolute;
     content: "";

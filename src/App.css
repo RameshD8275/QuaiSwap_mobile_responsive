@@ -2,8 +2,6 @@
 
 .App {
     text-align: center;
-    /* overflow-x: auto;
-    overflow-y: auto; */
 }
 
 :root {
@@ -11,28 +9,39 @@
     --main-color-hover: rgb(104, 117, 217, 0.2);
     --track-color: #ddd;
 }
+
 ::-webkit-scrollbar {
-    width: 6px; /* Change this value for width */
+    width: 6px;
+    /* Change this value for width */
 }
+
 ::-webkit-scrollbar:horizontal {
-    height: 6px; /* Height of the horizontal scrollbar */
+    height: 6px;
+    /* Height of the horizontal scrollbar */
 }
+
 /* Track (background) of the scrollbar */
 ::-webkit-scrollbar-track {
-    background: #000111; /* Change this color for track */
-    border-radius: 10px; /* Rounded corners */
+    background: #000111;
+    /* Change this color for track */
+    border-radius: 10px;
+    /* Rounded corners */
 }
 
 /* Draggable part of the scrollbar */
 ::-webkit-scrollbar-thumb {
-    background: #888; /* Change this color for thumb */
-    border-radius: 10px; /* Rounded corners */
+    background: #888;
+    /* Change this color for thumb */
+    border-radius: 10px;
+    /* Rounded corners */
 }
 
 /* Thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #363e54; /* Change this color for hover effect */
+    background: #363e54;
+    /* Change this color for hover effect */
 }
+
 header {
     height: 100px;
     display: flex;
@@ -46,7 +55,6 @@ body {
     scrollbar-width: thin;
     font-family: "Bai Jamjuree";
 }
-
 
 .LpLoadingTitle {
     font-size: large;
@@ -105,7 +113,8 @@ body {
     max-width: 800px;
     margin: 0 auto;
     min-height: 400px;
-    text-align: center; /* Centers text inside the box */
+    text-align: center;
+    /* Centers text inside the box */
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -353,7 +362,7 @@ body {
     padding: 15px 30px !important;
     font-size: 18px !important;
     border-radius: 10px !important;
-  }
+}
 
 .bigButton[disabled] {
     background-color: #E2290126;
@@ -524,6 +533,7 @@ body {
     border-radius: 15px;
     padding: 10px;
 }
+
 .normal-Input-Div-2:hover {
     background-color: #E2290126 !important;
 }
