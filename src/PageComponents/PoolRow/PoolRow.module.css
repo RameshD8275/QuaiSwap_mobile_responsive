@@ -1,0 +1,380 @@
+.poolRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+.poolRowTop {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  height: 80px;
+  place-items: center;
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(233, 234, 235);
+}
+.rowImg {
+  padding-left: 10px;
+  justify-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.absDiv {
+  position: relative;
+  width: fit-content;
+}
+.rowImg h1 {
+  color: var(--dark-purple);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+}
+.rowImg img {
+  width: 30px;
+  height: 30px;
+}
+.rowImg .absImg {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.rowCol,
+.rowColDesk {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 9px;
+}
+.rowColDesk {
+  gap: 4px;
+}
+.firstHead {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.firstHead p {
+  font-weight: 600;
+  line-height: 1;
+  color: var(--dark-purple);
+  font-size: 16px;
+}
+.firstHead h5 {
+  font-weight: 400;
+  line-height: 1;
+  color: var(--purple-color);
+  font-size: 12px;
+}
+.rowCol p,
+.rowColDesk p {
+  color: var(--purple-color);
+  line-height: 1;
+  font-size: 12px;
+}
+.rowColDesk p {
+  font-size: 16px;
+}
+.rowColDesk h4 {
+  color: rgb(189, 194, 196);
+  line-height: 1;
+  font-size: 16px;
+}
+.rowColDesk h6 {
+  color: rgb(189, 194, 196);
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 400;
+}
+.rowCol h5 {
+  color: var(--dark-purple);
+  line-height: 1;
+  font-weight: 500;
+  font-size: 16px;
+}
+.poolRowTop svg {
+  transition: all 0.6s ease-in-out;
+}
+.rowCol svg {
+  margin-left: 5px;
+}
+.rowCol h5:hover {
+  opacity: 0.4;
+}
+.poolRowBottom {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 1rem;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+  max-height: 0px;
+  height: 100%;
+  padding: 0px 32px;
+  transition: all 0.6s linear;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+.poolRowOpen {
+  padding: 16px 32px;
+  max-height: 900px;
+}
+.rowLinks {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  min-width: 250px;
+  gap: 10px;
+}
+.rowLinks a {
+  color: var(--button-bg);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+}
+.rowLinks a:hover {
+  text-decoration: underline;
+}
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.earnedDiv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 16px;
+  border: 2px solid rgb(238, 234, 244);
+  border-radius: 16px;
+  width: 100%;
+  gap: 10px;
+  flex: 1;
+  height: 120px;
+}
+.earnedDiv h5 {
+  color: var(--purple-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1;
+}
+.earnedDiv .earnRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.earnRow p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--dark-purple);
+}
+.earnedDiv button {
+  width: 100%;
+}
+.bottomRowCol {
+  display: none;
+}
+.hiddenSwitch {
+  color: var(--button-bg);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+  pointer-events: all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.rowLinks .rowCol,
+.mob {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.rowLinks .rowCol p,
+.mob p {
+  font-weight: 400;
+  color: var(--dark-purple);
+  font-size: 14px;
+}
+.mob {
+  display: none;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--purple-color);
+}
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  font-weight: 400;
+  height: 24px;
+  padding: 0px 4px;
+  font-size: 12px;
+  color: rgb(49, 208, 170);
+  background: rgb(250, 249, 250);
+  border: 2px solid rgb(49, 208, 170);
+  justify-self: flex-start;
+}
+.redCheck {
+  justify-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  font-weight: 400;
+  height: 24px;
+  padding: 0px 4px;
+  font-size: 12px;
+  background-color: white;
+  color: var(--light-purple);
+  background: rgb(250, 249, 250);
+  border: 2px solid var(--light-purple);
+}
+.mob2 {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .poolRow {
+    position: relative;
+    isolation: isolate;
+  }
+  .poolRowTop {
+    background-color: white;
+  }
+  .poolRowBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(-300px);
+    z-index: -1;
+  }
+  .poolRowTop {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .poolRowOpen {
+    transform: none;
+  }
+  .detailsDiv h2 {
+    display: inline;
+  }
+  .detailsDiv svg {
+    color: var(--button-bg);
+  }
+  .rowColDesk {
+    display: none;
+  }
+  .btnDiv {
+    order: 1;
+  }
+  .rowLinks {
+    order: 3;
+  }
+  .bottomRowCol {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  .bottomRowCol .rowCol {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .bottomRowCol .rowCol p {
+    font-size: 16px;
+    color: var(--dark-purple);
+  }
+}
+@media screen and (max-width: 710px) {
+  .firstHead h5 {
+    display: none;
+  }
+  .firstHead p {
+    font-weight: 400;
+  }
+  .displayNone {
+    display: none;
+  }
+  .btnDiv {
+    flex-direction: column;
+    height: 250px;
+  }
+  .poolRowTop {
+    grid-template-columns: auto auto auto auto;
+    padding: 20px 20px;
+    height: auto;
+  }
+  .rowImg {
+    padding: 0px;
+  }
+  .mob {
+    display: flex;
+  }
+  .rowLinks a {
+    align-self: flex-end;
+  }
+  .mob2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  .mob2 .row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .row2 p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--purple-color);
+  }
+  .row2 h5 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--dark-purple);
+  }
+}

@@ -1,0 +1,70 @@
+.prizeBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 288px;
+  height: 370px;
+  padding: 24px;
+  border-radius: 24px;
+}
+.yellow {
+  box-shadow: 0px 5px 0px 0.3px rgb(255, 178, 55);
+  background: linear-gradient(
+    rgb(255, 178, 55) 0%,
+    rgb(255, 205, 81) 51.17%,
+    rgb(255, 231, 106) 100%
+  );
+  transform: rotate(-2.36deg);
+  color: var(--dark-purple);
+}
+.purple {
+  color: white;
+  transform: rotate(1.36deg);
+  box-shadow: 0px 5px 0px 0.3px rgb(60, 23, 134);
+  background: linear-gradient(var(--light-purple) 0%, rgb(81, 33, 177) 100%);
+}
+.prizeBox svg {
+  align-self: flex-end;
+  color: inherit;
+  font-size: 20px;
+}
+.textPart {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+.textPart h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.textPart h4 {
+  color: inherit;
+  font-weight: 600;
+  font-size: 16px;
+}
+.textPart p {
+  max-width: 100%;
+  text-align: left;
+  color: inherit;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.yellow .textPart h1 {
+  color: inherit;
+}
+.purple h1 {
+  background: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 718px) {
+  .purple,
+  .yellow {
+    transform: none;
+  }
+}

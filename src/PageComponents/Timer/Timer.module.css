@@ -1,0 +1,31 @@
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../Assets/slider/bg.png") 0% 0% / 100% 100% no-repeat;
+  background-repeat: no-repeat;
+  padding: 0px 10px 7px;
+  height: 60px;
+  gap: 10px;
+}
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2px;
+}
+.time p,
+.time h1 {
+  background: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  line-height: 1;
+}
+.time h1 {
+  font-size: 40px !important;
+}
+.time p {
+  line-height: 1.4 !important;
+  font-size: 20px !important;
+}

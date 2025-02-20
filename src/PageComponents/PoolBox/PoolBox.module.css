@@ -1,0 +1,193 @@
+.poolBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 370px;
+  background-color: white;
+  border: 1px solid rgb(231, 227, 235);
+  border-radius: 24px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.topBox {
+  background: linear-gradient(
+    111.68deg,
+    rgb(242, 236, 242) 0%,
+    rgb(232, 242, 246) 100%
+  );
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 20px;
+}
+.topBox .firstHead {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2px;
+}
+.firstHead p {
+  font-size: 24px;
+  color: var(--light-purple);
+  line-height: 1;
+  font-weight: 600;
+}
+.firstHead h5 {
+  color: var(--purple-color);
+  font-weight: 400;
+  line-height: 1;
+  font-size: 14px;
+}
+.absDiv {
+  position: relative;
+}
+.absDiv img {
+  width: 50px;
+  height: 50px;
+}
+.absDiv .absImg {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 24px 20px;
+}
+.row h5 {
+  color: var(--dark-purple);
+  font-weight: 600;
+  line-height: 1;
+  font-size: 16px;
+  border-bottom: 1px dashed var(--dark-purple);
+}
+
+.row p {
+  color: var(--dark-purple);
+  font-weight: 400;
+  line-height: 1;
+  font-size: 16px;
+}
+.bottomBox .row {
+  justify-content: center;
+  width: fit-content;
+  gap: 10px;
+  padding: 0px;
+}
+
+.connectDiv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  margin-top: 13px;
+  padding-inline: 20px;
+}
+.connectDiv button {
+  width: 100%;
+}
+.connectDiv p {
+  color: var(--purple-color);
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.bottomBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 16px;
+  padding-top: 14px;
+  padding-inline: 20px;
+  border-top: 2px solid rgb(231, 227, 235);
+}
+.hiddenSwitch {
+  text-align: center;
+  color: var(--button-bg);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+}
+.hidden {
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding-inline: 20px;
+  padding-top: 20px;
+}
+.hidden .rowCol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.hidden .rowCol p {
+  font-weight: 400;
+  color: var(--dark-purple);
+  font-size: 14px;
+}
+.hidden .rowCol p:first-child {
+  border-bottom: 1px dashed var(--light-purple);
+}
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  font-weight: 400;
+  height: 24px;
+  padding: 0px 4px;
+  font-size: 12px;
+  color: rgb(49, 208, 170);
+  background: rgb(250, 249, 250);
+  border: 2px solid rgb(49, 208, 170);
+  justify-self: flex-start;
+}
+.redCheck {
+  justify-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  font-weight: 400;
+  height: 24px;
+  padding: 0px 4px;
+  font-size: 12px;
+  background-color: white;
+  color: var(--light-purple);
+  background: rgb(250, 249, 250);
+  border: 2px solid var(--light-purple);
+}
+.hidden a {
+  text-decoration: none;
+  color: var(--button-bg);
+  align-self: flex-end;
+}
+.hidden a:hover {
+  text-decoration: underline;
+}
+.display {
+  display: flex;
+}
+.rotate {
+  transform: rotate(180deg);
+}

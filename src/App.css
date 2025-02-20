@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700');
+
+.App {
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+:root {
+    --main-color: rgb(104, 117, 217);
+    --main-color-hover: rgb(104, 117, 217, 0.2);
+    --track-color: #ddd;
+}
+::-webkit-scrollbar {
+    width: 6px; /* Change this value for width */
+}
+::-webkit-scrollbar:horizontal {
+    height: 6px; /* Height of the horizontal scrollbar */
+}
+/* Track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+    background: #000111; /* Change this color for track */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Draggable part of the scrollbar */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Change this color for thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #363e54; /* Change this color for hover effect */
+}
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+body {
+    scrollbar-width: thin;
+    font-family: "Bai Jamjuree";
+}
+
+
+.LpLoadingTitle {
+    font-size: large;
+    font-family: 'Bai Jamjuree';
+    text-align: center;
+}
+
+.removeContainer {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+.connectButton {
+    background-color: #E2290126;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 100px;
+    color: #E22901;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.connectButton:hover {
+    cursor: pointer;
+    color: #E2290126
+}
+
+.mainWindow {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.tradeBox {
+    width: 480px;
+    /* background-color: #0E111B; */
+    /* border: 2px solid #21273a; */
+    /* min-height: 400px; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.textBox {
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 400px;
+    text-align: center; /* Centers text inside the box */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.tradeBoxHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin-bottom: 10px;
+}
+
+.tradeBoxHeader h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    margin-left: 33%;
+  }
+
+.tradeBoxSubHeaderButtonGroup {
+    display: flex;
+    width: 60%;
+
+}
+
+.subHeaderbutton {
+    border-radius: 15px;
+    text-align: center;
+    height: 26px;
+    padding-left: 10px;
+    margin: 7px;
+    padding-right: 10px;
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-family: "Bai Jamjuree";
+}
+
+.subHeaderbutton:hover {
+    color: #E22901;
+}
+
+
+.tippy-tooltip [x-circle] {
+    border-radius: 10px !important;
+}
+
+
+
+.cog {
+    color: #51586f;
+    transition: 0.3s;
+}
+
+.cog:hover {
+    color: white;
+    rotate: 90deg;
+    cursor: pointer;
+}
+
+.switchButton,
+.plusButton {
+    background-color: #000111;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 8px;
+    position: absolute;
+    top: 110px;
+    left: 180px;
+    color: #5F6783;
+    border: 3px solid #E2290126;
+    font-size: 12px;
+    transition: 0.3s
+}
+
+.buysellTitle {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    font-size: 12px;
+    color: #5F6783;
+    font-weight: 500;
+}
+
+.swapPrice {
+    position: absolute;
+    top: 90px;
+    left: 15px;
+    font-size: 12px;
+    color: #5F6783;
+    font-weight: 500;
+}
+
+.dollarAmount {
+    position: absolute;
+    top: 75px;
+    left: 14px;
+    font-size: 10px;
+    color: #5F6783;
+}
+
+.switchButton:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.inputs {
+    position: relative;
+}
+
+/* Enhance hover for asset buttons */
+.asset {
+    position: relative;
+    min-width: 100px;
+    height: 30px;
+    background-color: 238, 234, 244;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0 5px;
+    /* Add padding for better spacing */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.balance-remove {
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.balance-remove:hover {
+    color: #E22901;
+}
+
+.balance-container {
+    position: absolute;
+    bottom: 10px;
+    /* Position near the bottom of the input box */
+    right: 10px;
+    /* Align to the right edge */
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    gap: 5px;
+    /* Space between items */
+    text-align: right;
+    /* Align text to the right */
+}
+
+/* Adjust input-component layout */
+.input-component {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* Full width for input and asset selection */
+}
+
+.asset-remove {
+    position: relative;
+    min-width: 40px;
+    height: 30px;
+    background-color: 238, 234, 244;
+    border-radius: 20px;
+    border-color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    padding-right: 8px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.asset-remove:hover {
+    background-color: #E2290126;
+}
+
+.asset:hover {
+    cursor: pointer;
+    background-color: #E2290126;
+    color: #E22901;
+    /* Match the theme color on hover */
+}
+
+/* Asset logo adjustments */
+.assetLogo {
+    height: 22px;
+    margin-left: 5px;
+}
+
+.assetLogo-overwrite {
+    position: absolute;
+    right: 5px;
+    height: 22px;
+    margin-left: 5px;
+}
+
+.bigButton {
+    background-color: #E2290126 !important;
+    width: calc(100%);
+    height: 55px;
+    font-size: 20px;
+    color: #E22901;
+    font-weight: bold;
+    border-radius: 15px;
+    border-color: #2A2D3B;
+    border: none;
+    /* margin-bottom: 30px; */
+    margin-top: 8px;
+    font-family: "Bai Jamjuree";
+}
+
+.bigButton2 {
+    background-color: #26a7de !important;
+    color: white !important;
+    font-weight: bold !important;
+    padding: 15px 30px !important;
+    font-size: 18px !important;
+    border-radius: 10px !important;
+  }
+
+.bigButton[disabled] {
+    background-color: #E2290126;
+    opacity: 0.4;
+    color: #E22901;
+}
+
+.bigButton[disabled]:hover {
+    cursor: not-allowed;
+    background-color: #E2290126 !important;
+}
+
+.bigButton:hover {
+    cursor: pointer;
+    color: #E2290126 !important;
+}
+
+.bigButton:active {
+    background-color: #E2290126 !important;
+}
+
+.smallButton {
+    background-color: #E2290126;
+    color: #E22901 !important;
+    font-weight: bold;
+    border: none;
+    font-family: "Bai Jamjuree";
+}
+
+.smallButton[disabled] {
+    background-color: #E2290126;
+    opacity: 0.4;
+    color: #E22901;
+}
+
+.smallButton[disabled]:hover {
+    cursor: not-allowed;
+    background-color: #E2290126;
+}
+
+.smallButton:hover {
+    cursor: pointer;
+    background-color: #a73f28 !important;
+}
+
+.tokenLogo {
+    width: 40px;
+    height: 40px;
+}
+
+.modalContent {
+    border-top: 1px solid #363e54;
+    border-bottom: 1px solid #363e54;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll !important;
+    height: 500px !important;
+}
+
+.tokenChoice {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+.tokenChoice-enable {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    background-color: rgb(26, 0, 53);
+}
+
+
+.left-choice {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    margin-right: 5px;
+}
+
+.right-choice {
+    display: flex;
+    width: 50%;
+}
+
+.searchToken {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+.removeLp {
+    display: flex;
+    background-color: #E2290126 !important;
+    color: white !important;
+    height: 120px !important;
+    width: 440px;
+    margin-bottom: 5px;
+    font-size: 35px;
+    font-family: "Bai Jamjuree";
+    border-radius: 12px !important;
+}
+
+/* Position balance below the asset selection button */
+.tokenBalance {
+    font-size: 0.85rem;
+    /* Small text size */
+    color: #888888;
+    /* Neutral color */
+    margin-top: 5px;
+    /* Space between the button and balance */
+    cursor: pointer;
+    /* Pointer cursor for hover effect */
+    text-align: left;
+    /* Align text to the left */
+    transition: color 0.3s ease, transform 0.2s ease;
+    /* Smooth transition */
+}
+
+.tokenBalance:hover {
+    color: #E22901;
+    /* Highlighted color */
+    text-decoration: underline;
+    /* Underline on hover */
+    transform: scale(1.02);
+    /* Slight zoom effect */
+}
+
+/* Ensure vertical alignment for inputs and balances */
+.normal-Input-Div {
+    position: relative;
+    /* Make it the reference point for absolute positioning */
+    display: flex;
+    flex-direction: column;
+    background-color: #000111 !important;
+    color: white !important;
+    height: 120px !important;
+    width: 415px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-family: "Bai Jamjuree";
+    border: 2px dashed #E2290126;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Ensure vertical alignment for inputs and balances */
+.normal-Input-Div-2 {
+    position: relative;
+    /* Make it the reference point for absolute positioning */
+    display: flex;
+    flex-direction: column;
+    background-color: #000111 !important;
+    color: white !important;
+    height: 120px !important;
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-family: "Bai Jamjuree";
+    border: 2px dashed #E2290126;
+    border-radius: 15px;
+    padding: 10px;
+}
+.normal-Input-Div-2:hover {
+    background-color: #E2290126 !important;
+}
+
+.normal-Input-Div:hover {
+    background-color: #E2290126 !important;
+}
+
+.input-custom {
+    display: inline;
+    position: relative;
+    /* left: 15px; */
+    outline: none;
+    /* top: 35px; */
+    width: 250px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: "Bai Jamjuree";
+    font-size: 40px;
+}
+
+.input-custom-migrate {
+    display: inline;
+    position: relative;
+    /* left: 15px; */
+    outline: none;
+    /* top: 35px; */
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: "Bai Jamjuree";
+    font-size: 40px;
+}
+
+.searchToken .ant-input {
+    background-color: #000111 !important;
+    color: white !important;
+    border-width: 0px !important;
+    height: 48px !important;
+    margin-bottom: 5px;
+    font-size: 16px;
+    border-radius: 12px !important;
+}
+
+.tokenChoice:hover {
+    cursor: pointer;
+    background-color: rgb(26, 0, 53);
+}
+
+.tokenName {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Bai Jamjuree';
+}
+
+.tokenNameLeft {
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Bai Jamjuree';
+}
+
+.tokensymbol {
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #51596f;
+    font-family: 'Bai Jamjuree';
+}
+
+.tokensymbolLeft {
+    justify-self: end;
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #51596f;
+    font-family: 'Bai Jamjuree';
+}
+
+.token-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.token-item {
+    display: flex;
+    align-items: center;
+    background-color: #00000000;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.token-image-small {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.token-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.token-name {
+    font-weight: bold;
+}
+
+.token-symbol {
+    color: #555;
+    font-size: 14px;
+}

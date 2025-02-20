@@ -1,0 +1,27 @@
+[
+    {
+        "symbol": "QUAI",
+        "img": "/assets/quai.png",
+        "name": "Wrapped QUAI",
+        "address": "0x005c46f661Baef20671943f2b4c087Df3E7CEb13",
+        "decimals": 18,
+        "pumpfun":false
+    },
+    {
+        "symbol": "QSWAP",
+        "img": "/assets/quaiswap.png",
+        "name": "QuaiSwap",
+        "address": "0x0041A14f8c44Fe623F06b49D20dcb05B5DA130c3",
+        "decimals": 18,
+        "pumpfun":false
+    },
+    {
+        "symbol": "POOP",
+        "img": "/assets/poop_logo_rotating_css.gif",
+        "name": "Poop.fun",
+        "address": "0x0002D28592FDE376DD17445a16222F24E1F4D9d9",
+        "decimals": 18,
+        "pumpfun":false
+    }
+    
+]

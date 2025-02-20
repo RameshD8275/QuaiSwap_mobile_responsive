@@ -1,0 +1,194 @@
+.auctionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.leftAuction,
+.rightAuction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.leftAuction svg {
+  color: rgb(189, 194, 196);
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0px 5px;
+}
+.leftAuction .activeType {
+  color: var(--button-bg);
+}
+.toggleSwitch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.toggleSwitch input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.toggleSwitch label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 36px;
+  height: 20px;
+  background: #181a20;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.toggleSwitch label:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  width: 16px;
+  transform: translate(0%, -50%);
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.toggleSwitch input:checked + label {
+  background: var(--button-bg);
+}
+
+.toggleSwitch input:checked + label:after {
+  left: calc(100% - 2px);
+  transform: translate(-100%, -50%);
+}
+
+.toggleSwitch label:active:after {
+  width: 16px;
+}
+.finishSwitch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(238, 234, 244);
+  border: 1px solid rgb(215, 202, 236);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 148px;
+}
+.finishSwitch h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #E22901;
+  padding: 5px 12px;
+  text-align: center;
+  user-select: none;
+}
+
+.finishSwitch .activeLive {
+  background-color: #E22901;
+  color: rgb(255, 255, 255);
+  border-radius: 16px;
+}
+.rightCol {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  gap: 2px;
+}
+.rightCol p,
+.rightCol h3,
+.auctionDrop h4 {
+  color: var(--darkred-color);
+  font-weight: 400;
+  line-height: 1;
+  font-size: 12px;
+}
+.rightCol h3 {
+  cursor: pointer;
+  background: rgb(238, 234, 244);
+  border-radius: 16px;
+  height: 40px;
+  width: 168px;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10px;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+}
+.rightCol h3 svg {
+  font-size: 10px;
+}
+.auctionDrop {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: auto;
+  width: 168px;
+  background-color: rgb(238, 234, 244);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 0px 0px 16px 16px;
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0px;
+  transition: all 0.3s ease-in-out;
+}
+.activeAuction {
+  z-index: 1;
+  opacity: 1;
+  max-height: 900px;
+}
+.auctionDrop h4 {
+  font-size: 16px;
+  padding: 15px 10px;
+  width: 100%;
+  cursor: pointer;
+}
+.auctionDrop h4:hover {
+  background-color: rgb(215, 202, 236);
+}
+.rightCol .activeDrop {
+  border-radius: 16px 16px 0px 0px;
+}
+.rightCol input {
+  background-color: rgb(238, 234, 244);
+  border-radius: 16px;
+  box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+  color: var(--dark-purple);
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  outline: 0px;
+  padding: 0px 16px;
+  width: 100%;
+  border: 1px solid rgb(215, 202, 236);
+}
+@media screen and (max-width: 866px) {
+  .auctionHeader {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+  }
+  .leftAuction,
+  .rightAuction {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 508px) {
+  .leftAuction {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
